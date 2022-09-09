@@ -11,7 +11,7 @@
     margin-bottom: 0;
 } */
 
-.status__true {
+.true {
     display: block;
 
     width: 15px;
@@ -28,7 +28,7 @@
     background-color: #1b9c26;
 } */
 
-.status__false {
+.false {
     /* composes: status; */
     display: block;
     
