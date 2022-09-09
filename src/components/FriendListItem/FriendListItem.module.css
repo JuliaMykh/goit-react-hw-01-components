@@ -23,13 +23,7 @@
     
 }
 
-/* .true {
-    composes: status;
-    background-color: #1b9c26;
-} */
-
 .false {
-    /* composes: status; */
     display: block;
     
         width: 15px;
