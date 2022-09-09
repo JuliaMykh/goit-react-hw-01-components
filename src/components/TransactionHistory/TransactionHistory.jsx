@@ -27,7 +27,7 @@ export const TransactionHistory = ({ transactions }) => {
 
 TransactionHistory.propTypes = {
   transactions: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
       type: PropTypes.string,
       amount: PropTypes.string,
       currency: PropTypes.string,
