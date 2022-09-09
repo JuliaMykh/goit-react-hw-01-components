@@ -11,7 +11,7 @@
     margin-bottom: 0;
 } */
 
-.status {
+.status__true {
     display: block;
 
     width: 15px;
@@ -19,15 +19,24 @@
     margin-right: 20px;
 
     border-radius: 50%;
+    background-color: #1b9c26;
+    
 }
 
-.status__true {
+/* .true {
     composes: status;
     background-color: #1b9c26;
-}
+} */
 
 .status__false {
-    composes: status;
+    /* composes: status; */
+    display: block;
+    
+        width: 15px;
+        height: 15px;
+        margin-right: 20px;
+    
+        border-radius: 50%;
     background-color: #a82929;
 }
 
