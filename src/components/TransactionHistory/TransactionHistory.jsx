@@ -25,7 +25,7 @@ export const TransactionHistory = ({ transactions }) => {
   );
 }
 
-TransactionHistory.prototype = {
+TransactionHistory.propTypes = {
   transactions: PropTypes.arrayOf(
     PropTypes.exact({
       type: PropTypes.string,
