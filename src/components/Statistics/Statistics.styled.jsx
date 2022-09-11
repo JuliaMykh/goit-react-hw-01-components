@@ -1,23 +1,21 @@
-.statistics{
-    margin: 20px;
-}
+import styled from "@emotion/styled";
 
-.title {
+const SectionStat = styled.section`
+    margin: 20px;
+`;
+const Title = styled.h2`
     text-transform: uppercase;
     color: rgb(35, 32, 32);
     margin-top: 50px;       
     margin-bottom: 15px;
     text-align: center;
-}
-
-.statList {
+`;
+const StatList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.item {
+`;
+const StatItem = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +25,10 @@
 
     color: #fff;
     background-color: #ccc;
-}
-
-.label {
+`;
+const Lable = styled.span`
     font-size: 12px;
     margin-bottom: 10px;
-}
+`;
+
+export { SectionStat, Title, StatList, StatItem, Lable};

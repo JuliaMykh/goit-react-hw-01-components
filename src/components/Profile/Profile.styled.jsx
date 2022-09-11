@@ -1,4 +1,6 @@
-.profile{
+import styled from "@emotion/styled";
+
+const ProfileContainer = styled.div`
     display: flex;
         flex-direction: column;
         align-items: center;
@@ -10,16 +12,15 @@
         box-shadow: 3px 3px 3px 3px rgba(174, 168, 168, 0.75);
 
         margin: 0 auto;
-}
-.description {
+`;
+const DescriptionContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 
     color: #000000;
-}
-
-.avatar {
+`;
+const Avatar = styled.img`
     border: 3px solid #e9eef3;
     border-radius: 50%;
 
@@ -28,26 +29,22 @@
 
     width: 150px;
     height: 150px;
-}
-
-.name {
+`;
+const NameUser = styled.p`
     font-weight: 700;
     text-transform: uppercase;
 
     margin-bottom: 10px;
-}
-
-.tag {
+`;
+const Tag = styled.p`
     margin-bottom: 10px;
     color: #4c8fd1;
-}
-
-.location {
+`;
+const Location = styled.p`
     margin-bottom: 30px;
     color: #4c8fd1;
-}
-
-.stats {
+`;
+const StatsContainer = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,9 +56,8 @@
 
     border-top: 1px solid #dddddd;
     background-color: #b2cfed;
-}
-
-.item {
+`;
+const StatsItem = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,17 +65,32 @@
     padding: 15px;
 
     border-right: 1px solid #dddddd;
-}
 
-.item:last-child {
+    &:last-child {
     border-right: none;
 }
-
-.label {
+`;
+const Label = styled.span`
     font-size: 12px;
     margin-bottom: 5px;
-}
-
-.quantity {
+`;
+const Quantity = styled.span`
     font-weight: 700;
-}
+`;
+
+export {
+    ProfileContainer,
+    DescriptionContainer,
+    Avatar,
+    NameUser,
+    Tag,
+    Location,
+    StatsContainer,
+    StatsItem,
+    Label,
+    Quantity
+};
+
+
+
+
